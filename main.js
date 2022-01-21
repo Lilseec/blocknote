@@ -7,7 +7,7 @@ let textArea = document.getElementById('input')
 
 for (let key in localStorage) {
     if (key === 'key' || key ==='getItem' || key === 'clear' || key === 'length') {
-        pass
+        // pass
     } else {
         createNote(localStorage[key], key)
     }
