@@ -1,23 +1,43 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
     <link rel="stylesheet" href="style.css">
-    <title>Blocknote</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    
     <div class="container">
-        <h1>Input your dich</h1>
-        <textarea name="input" id="input" cols="30" rows="10" autofocus></textarea>
-        <hr>
-        <button id="add">Add</button>
-        <div class="notes">
-
+        <div class="overflow"></div>
+        <div class="main-header">
+            <span>Create</span>
+            <div class="vl"></div>
+            <span>Notes</span>
+            <div class="vl"></div>
+            <span>About</span>
+        </div>
+        <div id='current' class="Create">
+            <div class="input">
+              <textarea></textarea>
+            </div>
+            <div class="button">
+              <button>
+                Add
+              </button>
+            </div>
+        </div>
+        
+        <div class="Notes" style="display: none;"></div>
+        <div class='About' style="display: none;">
+          <h1>Simple App For Creating Notes</h1>
+          <h2>Future Features</h2>
+          <ul>
+            <li>Editing notes</li>
+            <li>MarkDown support</li>
+          </ul>
         </div>
     </div>
-    <script src="main.js"></script>
-    
 </body>
 </html>
